@@ -1,6 +1,10 @@
-<h1>Editing photo</h1>
+<h1>Edit A Photo</h1>
+<%= form_for @photo do |f| %>
+	<%= f.label :title %>
+	<%= f.text_field :title %><br>
+	<%= f.label :url %>
+	<%= f.text_field :url %><br>
+	<%= f.submit %>
+<% end %>
 
-<%= render 'form' %>
-
-<%= link_to 'Show', @photo %> |
-<%= link_to 'Back', photos_path %>
+<%= link_to 'Back', photos_url %>
