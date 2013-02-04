@@ -1,0 +1,24 @@
+<div>
+	<h1>Dice Game</h1>
+</div>
+
+<div>
+	<p><%= @dice_one %> </p>
+	<p><%= @dice_two %></p>
+		
+	<h2><%= @result %></h2>
+	<h2><%= @alert %></h3>
+
+	<% if (@point.to_i == 0) || (@sum.to_i == 7) || (@sum.to_i == params[:point].to_i)%>
+		<% if @result = "YOU WIN!"%>
+			<h2><%= link_to @button, dice_url %></h2>
+		<% else @result = "YOU LOSE!"%>
+			<h2><%= link_to @button, dice_url %></h2>
+		<% end %>
+	<% else %>
+		<h2><%= link_to @button, point_url(@point) %></h2>
+	<% end %>
+
+</div>
+
+

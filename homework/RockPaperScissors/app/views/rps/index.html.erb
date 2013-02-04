@@ -1,0 +1,17 @@
+
+<div>
+	<h1>Rock,Paper,Scissors</h1>
+</div>
+
+<div>
+	<h2>Let's Play! Choose One: </h2>
+	<table>
+		<tr>
+		<% @chooses.each do |choose| %>
+			<td><%= link_to choose, choice_url(choose)%></td>
+			
+		<% end %>
+	</tr>
+	</table>
+
+</div>

@@ -1,0 +1,46 @@
+
+body {
+	font-family: 'Helvetica Nueue', Helvetica, Arial;
+	font-size: 16px;
+	width: 960px;
+	margin-left: 20px;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+	width: 1024px;
+	margin-left: 20px;
+	border-bottom: solid 5px #923337;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: bold;
+	width: 1024px;
+	margin-left: 20px;
+}
+
+td {
+	padding: 12px 0px;
+	font-size:  20px;
+	margin-left: 20px;
+}
+
+table {
+	margin-top: 24px;
+	margin-left: 20px;
+	width: 80%;
+}
+
+th{
+	padding-bottom:  12px;
+	font-size: 20px;
+	text-align: left;
+	font-weight: bold;
+	border-bottom: 4px solid #5484a7;
+}
+
+p{
+	margin-left: 20px;
+}
